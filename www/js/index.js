@@ -17,6 +17,21 @@ $(document).on("pagecreate", "#home", function() {
   });
 });
 
+function changeClassMode() {
+  let element = document.getElementById("app");
+  let mode = element.className;
+  switch (mode) {
+    case "dark":
+      element.classList.remove("dark");
+      element.className = "light";
+      break;
+    case "light":
+      element.classList.remove("light");
+      element.className = "dark";
+      break;
+  }
+}
+
 $(document).on("pagebeforeshow", "#headline", function() {
   $("#movie-data").empty();
   $.each(movieInfo.result, function(i, row) {
