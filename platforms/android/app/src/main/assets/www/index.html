@@ -1,0 +1,63 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://example.gajotres.net/iscrollview/jquery.mobile.iscrollview.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://example.gajotres.net/iscrollview/jquery.mobile.iscrollview-pull.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page" id="home">
+      <div data-role="header">
+        <h1>Movie List</h1>
+      </div>
+      <div role="main" class="ui-content">
+        <div class="example-wrapper">
+          <ul data-role="listview" id="movie-list"></ul>
+        </div>
+      </div>
+      <div data-role="footer">
+        <h1>
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+        </h1>
+      </div>
+    </div>
+    <div data-role="page" id="headline">
+      <div data-role="header">
+        <a
+          href="#home"
+          class="ui-btn-left"
+          data-transition="slide"
+          data-direction="reverse"
+          >&laquo; Back
+        </a>
+        <h1>
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+        </h1>
+      </div>
+      <div data-role="content">
+        <ul data-role="listview" id="movie-data" data-theme="a"></ul>
+      </div>
+    </div>
+  </body>
+</html>
