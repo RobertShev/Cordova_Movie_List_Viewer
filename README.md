@@ -1,4 +1,4 @@
-# todo_app
+# Movie App
 
 # 1. Seadmistamine
 
@@ -13,6 +13,7 @@ Juhendi sisu on arusaadav. Juhendi autor saab aru millest kirjutab ja on kogenud
 Juhend ei olnud piisavalt põhjalik
 
 Juhendi eelduseks on NodeJS kasutamine ja javascript teadmine.
+[Juhend](https://www.gajotres.net/building-a-native-mobile-app-with-cordova-and-jquery-mobile/2/)
 
 # 3. SDK Versiooni muutused
 
